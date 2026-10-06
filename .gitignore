@@ -1,0 +1,37 @@
+# Environnement virtuel — ne jamais envoyer sur GitHub
+env/
+venv/
+.venv/
+
+# Base de données locale
+db.sqlite3
+
+# Fichier secrets — TRÈS IMPORTANT
+.env
+
+# Fichiers Python compilés
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+
+# Fichiers médias uploadés par les utilisateurs
+media/
+
+# Fichiers statiques collectés
+staticfiles/
+static_root/
+
+# VS Code
+.vscode/
+
+# PyCharm
+.idea/
+
+# Système Windows
+Thumbs.db
+desktop.ini
+
+# Logs
+*.log

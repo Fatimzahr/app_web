@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="/logo-heec.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MedStack — Plateforme médicale HEEC Marrakech</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700;800&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+    <style>
+      *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+      :root {
+        --navy:     #0B1628;
+        --navy2:    #152035;
+        --blue:     #1B4FBF;
+        --blue-mid: #2563EB;
+        --gold:     #F5A623;
+        --gold-light: #FDE68A;
+        --white:    #FFFFFF;
+        --off-white:#F8FAFC;
+        --slate:    #64748B;
+        --border:   #E2E8F0;
+        --text:     #0F172A;
+        --text-muted: #64748B;
+        --success:  #059669;
+        --danger:   #DC2626;
+        --radius:   10px;
+        --shadow:   0 1px 3px rgba(0,0,0,0.08), 0 4px 16px rgba(0,0,0,0.06);
+        --shadow-lg:0 8px 32px rgba(11,22,40,0.14);
+      }
+
+      html { scroll-behavior: smooth; }
+
+      body {
+        font-family: 'Sora', sans-serif;
+        background: var(--off-white);
+        color: var(--text);
+        line-height: 1.6;
+        -webkit-font-smoothing: antialiased;
+      }
+
+      /* Scrollbar */
+      ::-webkit-scrollbar { width: 6px; }
+      ::-webkit-scrollbar-track { background: transparent; }
+      ::-webkit-scrollbar-thumb { background: #CBD5E1; border-radius: 99px; }
+
+      /* Selection */
+      ::selection { background: #DBEAFE; color: var(--navy); }
+
+      /* Focus visible */
+      :focus-visible { outline: 2px solid var(--blue-mid); outline-offset: 2px; }
+
+      /* Smooth page transitions */
+      #root { animation: fadeIn .25s ease; }
+      @keyframes fadeIn { from { opacity: 0; transform: translateY(4px); } to { opacity: 1; transform: none; } }
+
+      /* Global link */
+      a { transition: color .15s; }
+
+      /* Card base */
+      .card {
+        background: var(--white);
+        border: 1px solid var(--border);
+        border-radius: var(--radius);
+        box-shadow: var(--shadow);
+        transition: box-shadow .2s, transform .2s;
+      }
+      .card:hover { box-shadow: var(--shadow-lg); }
+
+      /* Buttons */
+      button, .btn { font-family: 'Sora', sans-serif; }
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
